@@ -4,7 +4,7 @@ phases:
   install: 
     commands:
     runtime-versions: 
-      docker: 18
+      docker:18
       - npm i npm@latest -g
       - pip install --upgrade pip
       - pip install --upgrade awscli
