@@ -14,7 +14,7 @@ phases:
       - npm install
   build:
     commands:
-      - npm run build:env.production
+      - npm run build:prod
   post_build:
     commands:
       - aws s3 sync ./build angulartestbuck
