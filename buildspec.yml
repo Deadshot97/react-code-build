@@ -3,8 +3,8 @@ version: 0.2
 phases:
   install: 
     runtime-versions: 
-        docker: 18
-  install:
+      nodejs: 8
+
     commands:
       - npm i npm@latest -g
       - pip install --upgrade pip
