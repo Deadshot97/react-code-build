@@ -18,13 +18,12 @@ phases:
   post_build:
     commands:
       - aws s3 sync ./dist/folder s3://angulartestbuck
-      
- artifacts:
-  files:
-    - '**/*.html'
-    - '**/*.js'
-    - '**/*.css'
-    - '**/*.ico'
+    artifacts:
+       files:
+      - '**/*.html'
+      - '**/*.js'
+      - '**/*.css'
+      - '**/*.ico'
   discard-paths: yes
   base-directory: 'dist/folder'
 
