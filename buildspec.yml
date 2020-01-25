@@ -17,7 +17,7 @@ phases:
       - npm run build:prod
   post_build:
     commands:
-      - aws s3 sync ./dist/folder s3://angulartestbuck
+      - aws s3 sync ./build s3://angulartestbuck
     discard-paths: yes
     base-directory: 'dist/folder'
 
