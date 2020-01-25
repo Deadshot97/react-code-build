@@ -17,5 +17,5 @@ phases:
       - npm run build:prod
   post_build:
     commands:
-      - aws s3 sync ./dist/folder s3://angulartestbuck 
+      - aws s3 sync C:/Users/SwamynathanPV/folder/dist/folder s3://angulartestbuck 
 
